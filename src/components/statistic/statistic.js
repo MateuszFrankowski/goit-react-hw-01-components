@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './statistic.module.css';
 export const Statistics = ({ stats, title }) => {
   return (
-    <section className={css.Statistics}>
+    <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css['stat-list']}>
         {stats.map(stat => (
