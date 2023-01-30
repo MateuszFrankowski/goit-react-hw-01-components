@@ -17,13 +17,13 @@ export const Statistics = ({ stats, title }) => {
 };
 
 Statistics.propTypes = {
-  stats: PropTypes.shape([
-    {
-      docx: PropTypes.number,
-      mp3: PropTypes.number,
-      pdf: PropTypes.number,
-      psd: PropTypes.number,
-    },
-  ]).isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ).isRequired,
+
   title: PropTypes.string,
 };
