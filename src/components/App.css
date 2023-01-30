@@ -8,9 +8,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
 }
 .friends-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5px;
+}
+.transactions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
 }
