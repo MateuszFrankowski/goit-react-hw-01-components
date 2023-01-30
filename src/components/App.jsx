@@ -1,16 +1,9 @@
+import { Statistics } from '../components/statistic/statistic.js';
+import data from '../components/statistic/data.json';
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="App">
+      <Statistics stats={data} title={'Upload stats'} />
     </div>
   );
 };
